@@ -1,0 +1,115 @@
+{
+    "info": {
+        "name": "RetailStoreManagement API",
+        "_postman_id": "12345678-abcd-efgh-ijkl-1234567890ab",
+        "description": "Collection to test all API endpoints for RetailStoreManagement",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Customer",
+            "item": [
+                {
+                    "name": "Get All Customers",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/api/Customer"
+                    }
+                },
+                {
+                    "name": "Create Customer",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/api/Customer"
+                    }
+                },
+                {
+                    "name": "Get Customer by ID",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/api/Customer/1"
+                    }
+                },
+                {
+                    "name": "Update Customer",
+                    "request": {
+                        "method": "PUT",
+                        "url": "{{baseUrl}}/api/Customer/1"
+                    }
+                },
+                {
+                    "name": "Delete Customer",
+                    "request": {
+                        "method": "DELETE",
+                        "url": "{{baseUrl}}/api/Customer/1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Product",
+            "item": [
+                {
+                    "name": "Get All Products",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/api/Product"
+                    }
+                },
+                {
+                    "name": "Create Product",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/api/Product"
+                    }
+                },
+                {
+                    "name": "Get Product by ID",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/api/Product/1"
+                    }
+                },
+                {
+                    "name": "Update Product",
+                    "request": {
+                        "method": "PUT",
+                        "url": "{{baseUrl}}/api/Product/1"
+                    }
+                },
+                {
+                    "name": "Delete Product",
+                    "request": {
+                        "method": "DELETE",
+                        "url": "{{baseUrl}}/api/Product/1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Purchase",
+            "item": [
+                {
+                    "name": "Get All Purchases",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/api/Purchase"
+                    }
+                },
+                {
+                    "name": "Create Purchase",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/api/Purchase"
+                    }
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:5000"
+        }
+    ]
+}
